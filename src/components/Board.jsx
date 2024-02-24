@@ -38,10 +38,11 @@ function Board(props) {
     }
 
     const handleClick = (e) => {
-        if (winner) {
+        let buttonId = e.target.dataset.buttonId;
+        if (winner || (buttonId === undefined)) {
             return;
         }
-        let buttonId = e.target.dataset.buttonId;
+
         let tempSquare = [...square];
         if (tempSquare[buttonId] === undefined) {
             tempSquare[buttonId] = currentPlayer;
