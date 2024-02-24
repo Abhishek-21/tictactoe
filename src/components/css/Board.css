@@ -1,0 +1,33 @@
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+}
+
+.board-container > .board-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.board-container > .board-header > button {
+    background: transparent;
+    box-shadow: 0 0 10px #857070;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.board {
+    width: 315px;
+    height: 315px;
+    display: grid;
+    column-gap: 8px;
+    row-gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,22 @@
+.square {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.player-one-styles {
+    background: var(--neon-red);
+    box-shadow: 0 0 10px 1px var(--neon-glow-red);
+    color: #000000;
+}
+
+.player-two-styles {
+    background: var(--neon-blue);
+    box-shadow: 0 0 10px 1px var(--neon-glow-blue);
+    color: #ffffff;
+}
